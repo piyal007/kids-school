@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind css2</title>
+    <title>Figma to HTML Designed By Piyal</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -42,8 +42,8 @@
             <div class="flex justify-between items-center py-2 md:hidden">
                 <!-- logo -->
                 <div class="flex gap-2 items-center">
-                    <img src="/images/logo.png" alt="">
-                    <h2 class="text-3xl font-bold uppercase">school</h2>
+                    <img class="w-11" src="/images/logo.png" alt="">
+                    <!-- <h2 class="text-3xl font-bold uppercase">school</h2> -->
                 </div>
                 <!-- hamberger icon -->
                 <div class="sm:inline-block md:hidden">
@@ -65,7 +65,7 @@
     <main class="bg-gray-50">
 
         <!-- hero section -->
-        <section class="container py-6">
+        <section class="container pb-2">
 
             <!-- hero container -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
@@ -73,7 +73,7 @@
                 <!-- hero left -->
                 <div class="flex flex-col items-center text-center md:text-left md:items-start md:justify-center order-2 md:order-1">
                     <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold">
-                        <span class="text-[#FEA301]">Empowering</span><br/>students from small age<br/><span
+                        <span class="text-[#FEA301]">Empowering</span> students from small age <span
                             class="text-[#01ACFD]">towards vision</span>
                     </h1>
                     <p class="text-base md:text-lg py-4"></p>
@@ -98,15 +98,15 @@
         <!-- Curriculam section -->
         <section class="container">
 
-            <h2 class="text-4xl font-bold text-center py-10">Standard Curriculum</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center pt-8 pb-4 md:pt-16 md:pb-8">Standard Curriculum</h2>
             <!-- card container -->
             <div class="card-container grid grid-cols-1 md:grid-cols-3 justify-items-center gap-8">
 
                 <!-- card 1 -->
                 <div class="card-1 flex flex-col items-center text-center px-4 py-16 rounded-xl shadow-md">
                     <img src="/images/icon1.png" alt="">
-                    <h2 class="text-2xl font-bold pt-6">Kinder (3-6) Years</h2>
-                    <p class="py-6 leading-loose">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    <h2 class="text-xl md:text-2xl font-bold pt-6">Kinder (3-6) Years</h2>
+                    <p class="py-6 leading-loose text-sm md:text-base">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
                         ridiculus mu
                         sdis parturient</p>
                     <button class="text-[#64C8FF] font-semibold hover:scale-105 transition cursor-pointer">Read
@@ -115,8 +115,8 @@
                 <!-- card 2 -->
                 <div class="card-2 flex flex-col items-center px-4 py-16 rounded-xl text-center shadow-md">
                     <img src="/images/icon2.png" alt="">
-                    <h2 class="text-2xl font-bold pt-6">Elementary School</h2>
-                    <p class="py-6 leading-loose">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    <h2 class="text-xl md:text-2xl font-bold pt-6">Elementary School</h2>
+                    <p class="py-6 leading-loose text-sm md:text-base">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
                         ridiculus mu
                         sdis parturient</p>
                     <button class="text-[#F0AA00] font-semibold hover:scale-105 transition cursor-pointer">Read
@@ -125,8 +125,8 @@
                 <!-- card 3 -->
                 <div class="card-3 flex flex-col items-center text-center px-4 py-16 rounded-xl shadow-md">
                     <img src="/images/icon3.png" alt="">
-                    <h2 class="text-2xl font-bold pt-6">Middle (10-16) Years</h2>
-                    <p class="py-6 leading-loose">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    <h2 class="text-xl md:text-2xl font-bold pt-6">Middle (10-16) Years</h2>
+                    <p class="py-6 leading-loose text-sm md:text-base">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
                         ridiculus mu
                         sdis parturient</p>
                     <button class="text-[#8700FF] font-semibold hover:scale-105 transistion cursor-pointer">Read
@@ -151,65 +151,69 @@
             <div class="container">
                 <!-- Title -->
                 <div>
-                    <h2 class="text-4xl font-bold text-center py-10">Our Stories</h2>
+                    <h2 class="text-2xl md:text-4xl font-bold text-center py-10">Our Stories</h2>
                 </div>
                 <!-- Card items -->
-                <div class="grid gap-4 grid-cols-1 md:grid-cols-[0.95fr_1.05fr] items-start">
-                    <!-- left card -->
-                    <div class="bg-white rounded-xl">
+                <div class="grid gap-4 grid-cols-1 md:grid-cols-4">
+                    <!-- left big card -->
+                    <div class="bg-white rounded-xl shadow col-span-2">
                         <div class="relative">
-                            <img class="w-full h-250px object-cover" src="/images/stories1.png" alt="">
-                            <button class="bg-[#3CD8E8] py-3 px-6 rounded-full text-white cursor-pointer absolute left-8 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                            <img class="w-full h-[200px] md:h-[250px] object-cover rounded-t-xl" src="/images/stories1.png" alt="">
+                            <button class="bg-[#3CD8E8] py-2 md:py-3 px-6 rounded-full text-white cursor-pointer absolute left-8 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
                         </div>
                         <div class="px-8">
-                            <h3 class="text-2xl font-bold py-14">A fun toddler coloring training<br/>on classroom</h3>
-                            <p class="font-semibold text-sm pb-12 text-[#666666]">Beautiful branding for changes by Never Now in Australia.<br/>changes is a platform for open discussion in an inclusive<br/>and collaborative environment, providing the...</p>
+                            <h3 class="text-xl md:text-2xl font-bold py-8 md:py-14">A fun toddler coloring training<br/>on classroom</h3>
+                            <p class="font-semibold text-sm  text-[#666666]">Beautiful branding for Changes by Never Now in Australia reflects a thoughtful, modern identity built around openness and connection. Changes is a platform designed for open discussion in an inclusive and collaborative environment, where diverse voices are welcomed and respected. It creates a safe space for meaningful conversations, shared learning, and positive action, empowering individuals and communities to exchange ideas, challenge perspectives, and grow together. The brand emphasizes clarity, warmth, and trust, aligning with its mission to inspire dialogue that leads to real social and personal change.</p>
                         </div>
                     </div>
                     <!-- right card -->
-                    <div class="grid grid-cols-2 gap-4 *:bg-white *:rounded-xl">
-                        <div>
+                    <div class="col-span-2">
+                        <div class="grid grid-cols-2 gap-4 *:bg-white *:rounded-xl">
+
+                        <div class="">
                             <div class="relative">
-                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s2.jpg" alt="">
-                                <button class="bg-[#95B226] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                                <img class="rounded-t-xl w-full h-[150px] md:h-[200px] object-cover" src="/images/s2.jpg" alt="">
+                                <button class="bg-[#95B226] py-1 md:py-2 px-4 rounded-full text-white text-xs md:text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
                             </div>
                             <div class="py-8 px-5">
-                                <h3 class="font-bold">Find out if a school fits the family’s needs</h3>
+                                <h3 class="font-bold text-xs md:text-base">Find out if a school fits the family’s needs</h3>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="relative">
+                                <img class="rounded-t-xl w-full h-[150px] md:h-[200px] object-cover" src="/images/s3.jpg" alt="">
+                                <button class="bg-[#5D58F0] py-1 md:py-2 px-4 rounded-full text-white text-xs md:text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                            </div>
+                            <div class="py-8 px-5">
+                                <h3 class="font-bold text-xs md:text-base">Summer math & literacy centres for kids</h3>
                             </div>
                         </div>
                         <div>
                             <div class="relative">
-                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s3.jpg" alt="">
-                                <button class="bg-[#5D58F0] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                                <img class="rounded-t-xl w-full h-[150px] md:h-[200px] object-cover" src="/images/s4.jpg" alt="">
+                                <button class="bg-[#95B226] py-1 md:py-2 px-4 rounded-full text-white text-xs md:text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
                             </div>
                             <div class="py-8 px-5">
-                                <h3 class="font-bold">Summer math & literacy centres for kids</h3>
+                                <h3 class="font-bold text-xs md:text-base">Classroom management techniques for new tutors</h3>
                             </div>
                         </div>
                         <div>
                             <div class="relative">
-                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s4.jpg" alt="">
-                                <button class="bg-[#95B226] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                                <img class="rounded-t-xl w-full h-[150px] md:h-[200px] object-cover" src="/images/s5.jpg" alt="">
+                                <button class="bg-[#95B226] py-1 md:py-2 px-4 rounded-full text-white text-xs md:text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">July 19, 2019</button>
                             </div>
                             <div class="py-8 px-5">
-                                <h3 class="font-bold">Classroom management techniques for new tutors</h3>
+                                <h3 class="font-bold text-xs md:text-base">Conversation rhymes improve kids listening</h3>
                             </div>
                         </div>
-                        <div>
-                            <div class="relative">
-                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s5.jpg" alt="">
-                                <button class="bg-[#95B226] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">July 19, 2019</button>
-                            </div>
-                            <div class="py-8 px-5">
-                                <h3 class="font-bold">Conversation rhymes improve kids listening</h3>
-                            </div>
+
                         </div>
                     </div>
                 </div>
 
                 <!-- view all button -->
                 <div class="flex justify-center pt-16 pb-12">
-                    <button class="py-2 px-12 bg-black rounded-xl text-white font-semibold cursor-pointer">View All</button>
+                    <button class="py-1 md:py-2 px-12 bg-black rounded-xl text-white font-semibold cursor-pointer">View All</button>
                 </div>
             </div>
         </section>
@@ -219,12 +223,12 @@
     <!-- footer -->
     <footer class="bg-[#01ACFD]">
         <!-- footer container -->
-        <div class="container text-white grid grid-cols-3 justify-items-center py-16">
+        <div class="container text-white grid grid-cols-1 md:grid-cols-3 justify-items-start md:justify-items-center py-16">
             <!-- footer left -->
             <div>
                 <div class="flex gap-2 items-center">
-                    <img class="w-18" src="/images/footer_logo.png" alt="">
-                    <h2 class="text-3xl font-bold">Kids<br/>Education</h2>
+                    <img class="w-16 md:w-18" src="/images/footer_logo.png" alt="">
+                    <h2 class="text-2xl md:text-3xl font-bold">Kids<br/>Education</h2>
                 </div>
                 <div>
                     <p class="text-sm text-gray-50 pt-4">
@@ -233,9 +237,9 @@
                 </div>
             </div>
             <!-- footer middle -->
-            <div>
+            <div class="py-6 md:py-0">
                 <h3 class="text-xl font-bold">About School</h3>
-                <ul class="pt-4 space-y-2 *:*:text-gray-50">
+                <ul class="pt-2 md:pt-4 space-y-2 *:*:text-gray-50">
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/facilities">Facilities</a></li>
@@ -246,7 +250,7 @@
             <div>
                 <h3 class="text-xl font-bold">Keep In Touch</h3>
 
-                <ul class="flex gap-2 pt-4 *:p-2 *:bg-gray-50 *:text-[#01ACFD] *:rounded-full">
+                <ul class="flex gap-2 pt-4 *:p-1 md:*:p-2 *:bg-gray-50 *:text-[#01ACFD] *:rounded-full">
                     <li><a href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                     </a></li>
