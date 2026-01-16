@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="bg-gray-50">
+        <!-- navbar -->
+        <nav class="container">
+            <!-- nav container -->
+            <div class="hidden md:flex justify-between items-center py-2">
+                <!-- logo -->
+                <div class="flex gap-2 items-center">
+                    <img src="/images/logo.png" alt="">
+                    <h2 class="text-3xl font-bold uppercase">school</h2>
+                </div>
+                <!-- menu -->
+                <div class="">
+                    <ul class="flex gap-4 *:font-bold *:hover:scale-105 *:transition">
+                        <li><a class="text-[#FEA301]" href="/">Home</a></li>
+                        <li><a class="text-[#01ACFD]" href="/about">About</a></li>
+                        <li><a class="text-[#05D4DF]" href="/facilities">Facilities</a></li>
+                        <li><a class="text-[#5D58EF]" href="/admission">Admission</a></li>
+                    </ul>
+                </div>
+                <!-- contact btn -->
+                <div class="">
+                    <button
+                        class="bg-[#FEA301] py-2 px-12 rounded-xl text-white font-bold cursor-pointer">Contact</button>
+                </div>
+
+            </div>
+
+            <!-- mobile menu -->
+            <div class="flex justify-between items-center py-2 md:hidden">
+                <!-- logo -->
+                <div class="flex gap-2 items-center">
+                    <img src="/images/logo.png" alt="">
+                    <h2 class="text-3xl font-bold uppercase">school</h2>
+                </div>
+                <!-- hamberger icon -->
+                <div class="sm:inline-block md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-menu-icon lucide-menu">
+                        <path d="M4 5h16" />
+                        <path d="M4 12h16" />
+                        <path d="M4 19h16" />
+                    </svg>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- main area -->
+    <main class="bg-gray-50">
+
+        <!-- hero section -->
+        <section class="container py-6">
+
+            <!-- hero container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+
+                <!-- hero left -->
+                <div class="flex flex-col items-center text-center md:text-left md:items-start md:justify-center order-2 md:order-1">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold">
+                        <span class="text-[#FEA301]">Empowering</span><br/>students from small age<br/><span
+                            class="text-[#01ACFD]">towards vision</span>
+                    </h1>
+                    <p class="text-base md:text-lg py-4"></p>
+                    With the courage, Confidence, Creativity and Compassion tho make their Unique Contribution in a
+                    Diverse and Dynamic World.
+                    </p>
+                    <button
+                        class="bg-black rounded-xl text-white py-2 px-6 mt-4 font-bold cursor-pointer max-w-[200px]">Enroll
+                        Now</button>
+                </div>
+
+                <!-- hero right -->
+                <div class="flex justify-center md:justify-end items-center order-1 md:order-2">
+                    <img class="w-full h-auto max-w-lg object-contain" src="/images/banner.png" alt="School banner">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Curriculam section -->
+        <section class="container">
+
+            <h2 class="text-4xl font-bold text-center py-10">Standard Curriculum</h2>
+            <!-- card container -->
+            <div class="card-container grid grid-cols-1 md:grid-cols-3 justify-items-center gap-8">
+
+                <!-- card 1 -->
+                <div class="card-1 flex flex-col items-center text-center px-4 py-16 rounded-xl shadow-md">
+                    <img src="/images/icon1.png" alt="">
+                    <h2 class="text-2xl font-bold pt-6">Kinder (3-6) Years</h2>
+                    <p class="py-6 leading-loose">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mu
+                        sdis parturient</p>
+                    <button class="text-[#64C8FF] font-semibold hover:scale-105 transition cursor-pointer">Read
+                        More</button>
+                </div>
+                <!-- card 2 -->
+                <div class="card-2 flex flex-col items-center px-4 py-16 rounded-xl text-center shadow-md">
+                    <img src="/images/icon2.png" alt="">
+                    <h2 class="text-2xl font-bold pt-6">Elementary School</h2>
+                    <p class="py-6 leading-loose">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mu
+                        sdis parturient</p>
+                    <button class="text-[#F0AA00] font-semibold hover:scale-105 transition cursor-pointer">Read
+                        More</button>
+                </div>
+                <!-- card 3 -->
+                <div class="card-3 flex flex-col items-center text-center px-4 py-16 rounded-xl shadow-md">
+                    <img src="/images/icon3.png" alt="">
+                    <h2 class="text-2xl font-bold pt-6">Middle (10-16) Years</h2>
+                    <p class="py-6 leading-loose">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mu
+                        sdis parturient</p>
+                    <button class="text-[#8700FF] font-semibold hover:scale-105 transistion cursor-pointer">Read
+                        More</button>
+                </div>
+
+            </div>
+            <!-- arrow -->
+            <div class="flex gap-2 mt-12 justify-center">
+                <div class="p-3 bg-[#FEA301] rounded-full *:text-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                </div>
+                <div class="p-3 bg-[#FEA301] rounded-full *:text-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section class="stories">
+            <!-- Container -->
+            <div class="container">
+                <!-- Title -->
+                <div>
+                    <h2 class="text-4xl font-bold text-center py-10">Our Stories</h2>
+                </div>
+                <!-- Card items -->
+                <div class="grid gap-4 grid-cols-1 md:grid-cols-[0.95fr_1.05fr] items-start">
+                    <!-- left card -->
+                    <div class="bg-white rounded-xl">
+                        <div class="relative">
+                            <img class="w-full h-250px object-cover" src="/images/stories1.png" alt="">
+                            <button class="bg-[#3CD8E8] py-3 px-6 rounded-full text-white cursor-pointer absolute left-8 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                        </div>
+                        <div class="px-8">
+                            <h3 class="text-2xl font-bold py-14">A fun toddler coloring training<br/>on classroom</h3>
+                            <p class="font-semibold text-sm pb-12 text-[#666666]">Beautiful branding for changes by Never Now in Australia.<br/>changes is a platform for open discussion in an inclusive<br/>and collaborative environment, providing the...</p>
+                        </div>
+                    </div>
+                    <!-- right card -->
+                    <div class="grid grid-cols-2 gap-4 *:bg-white *:rounded-xl">
+                        <div>
+                            <div class="relative">
+                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s2.jpg" alt="">
+                                <button class="bg-[#95B226] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                            </div>
+                            <div class="py-8 px-5">
+                                <h3 class="font-bold">Find out if a school fits the family’s needs</h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="relative">
+                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s3.jpg" alt="">
+                                <button class="bg-[#5D58F0] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                            </div>
+                            <div class="py-8 px-5">
+                                <h3 class="font-bold">Summer math & literacy centres for kids</h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="relative">
+                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s4.jpg" alt="">
+                                <button class="bg-[#95B226] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">November 19, 2019</button>
+                            </div>
+                            <div class="py-8 px-5">
+                                <h3 class="font-bold">Classroom management techniques for new tutors</h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="relative">
+                                <img class="rounded-t-xl w-full h-[200px] object-cover" src="/images/s5.jpg" alt="">
+                                <button class="bg-[#95B226] py-2 px-4 rounded-full text-white text-sm cursor-pointer absolute left-5 bottom-y-1/2 -translate-y-1/2">July 19, 2019</button>
+                            </div>
+                            <div class="py-8 px-5">
+                                <h3 class="font-bold">Conversation rhymes improve kids listening</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- view all button -->
+                <div class="flex justify-center pt-16 pb-12">
+                    <button class="py-2 px-12 bg-black rounded-xl text-white font-semibold cursor-pointer">View All</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe Button Section -->
+        <div class="mt-20 relative border rounded-full p-2 max-w-md mx-auto">
+
+            <!-- mail icon -->
+            <svg class="absolute left-2 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+
+            <!-- email input box -->
+            <input class="w-full pl-8 pr-28 py-1 focus:outline-none rounded-full" type="email" name="" id=""
+                placeholder="Enter your email">
+
+            <!-- subscribe button -->
+            <button
+                class="bg-blue-600 text-white py-1 px-4 rounded-full cursor-pointer absolute right-2 top-1/2 -translate-y-1/2">Subscribe</button>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-1 {
+    background: linear-gradient(to bottom, #DEF5FF 0%, #FFFFFF 40%);
+}
+.card-2{
+    background: linear-gradient(to bottom, #FFF4DC 0%, #FFFFFF 40%);
+}
+.card-3{
+    background: linear-gradient(to bottom, #EEE1FF 0%, #FFFFFF 40%);
+}
+
+.stories{
+    background: linear-gradient(to top, #f7deac 0%, #F9FAFB 100%);
+}
